@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'okoury-HW9'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_18A72286A2864C29BBE83DD52A3AB3E1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_362688885FF84F9DAB0CED4D02D21522 }}
