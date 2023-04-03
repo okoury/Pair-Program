@@ -5,7 +5,15 @@ app = Flask(__name__)
 friends_dict = [
     {"name": "Test", "flavor": "swirl", "read": "yes", "activities": "reading"}
 ]
+# Handling error 404 and displaying relevant web page
+@app.errorhandler(404)
+def not_found_error(error):
+    return render_template("404.html"), 404
 
+# Handling error 500 and displaying relevant web page
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template("500.html"), 500
 
 @app.route("/", methods=["GET", "POST"])
 def index():
