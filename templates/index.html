@@ -15,7 +15,6 @@
       <label for="Page-name">Pages </label>
       <input type="text" id="Page-name" name="pname" />
     </p>
-
     <p>
       <label>Classification</label>
       <label for="read-Fiction">
@@ -28,7 +27,6 @@
         />
         Fiction
       </label>
-
       <label for="read-Non-Fiction">
         <input
           type="radio"
@@ -40,7 +38,6 @@
         Non-Fiction
       </label>
     </p>
-
     <fieldset>
       <legend>Details:</legend>
       <label for="own-book">
@@ -52,7 +49,6 @@
         />
         I own this book.
       </label>
-
       <label for="read-book">
         <input
           type="checkbox"
@@ -62,7 +58,6 @@
         />
         I've read this book.
       </label>
-
       <label for="like-book">
         <input
           type="checkbox"
@@ -72,7 +67,6 @@
         />
         I liked this book.
       </label>
-
       <label for="recommend-book">
         <input
           type="checkbox"
@@ -83,7 +77,6 @@
         I would recommend this book to others.
       </label>
     </fieldset>
-
     <p>
       <label for="Acquisition">
         How did I get this book?
@@ -93,14 +86,11 @@
           <option value="gift">It was a gift.</option>
           <option value="library">I checked it out from the library.</option>
           <option value="loaned">A friend loaned it to me.</option>
-
         </select>
       </label>
     </p>
-
     <p><input type="submit" id="submit" value="Submit" /></p>
   </form>
-
   <br /><br />
   {% if friends %}
   <h3>Friend List</h3>
@@ -116,7 +106,6 @@
         <th>Accquisition</th>
       </tr>
     </thead>
-
     <tbody>
       {% for friend in friends %}
       <tr>
