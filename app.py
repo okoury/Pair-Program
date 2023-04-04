@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, redirect, url_for, flash
 
 app = Flask(__name__)
+app.config["SECRET_KEY"] = "askjhgdahsvq8722ty3gu23gh1og232^*!#&$!Hda123&^$$$$"
 
 friends_dict = [
     {"name": "Test", "flavor": "swirl", "read": "yes", "activities": "reading"}
