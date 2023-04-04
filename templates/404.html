@@ -1,7 +1,19 @@
-{% extends 'base.html' %} % block body %
+{% extends 'base.html' %} {% block body %}
+
+<hr />
 <main>
-    <h2>Page not found</h2>
-    <hr />
-    <p>The resource you are looking for could not be found.</p>
+  <div class="row">
+    <div class="col-4">
+      <img
+        class="img-fluid"
+        src="{{ url_for('static', filename='images/pirate.png') }}"
+        alt="404 error page"
+      />
+    </div>
+
+    <div class="col-8">
+      <h2 class="mt-5">Page not found</h2>
+    </div>
+  </div>
 </main>
 {% endblock %}
